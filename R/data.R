@@ -1,10 +1,10 @@
 #' Brazilian Ministry of Transport Road Fleet data
 #'
-#' Long format dataset based on the road fleet databases
+#' This is a long format dataset based on the road fleet databases
 #' provided by the Brazilian Ministry of Transport. All variables
 #' are encoded to Brazilian Portuguese.
 #'
-#' @format ##`fleetbr`
+#' @format ## `fleetbr`
 #' A `tibble` data frame with 28,512 and 5 columns:
 #' \describe{
 #'   \item{uf}{Federative Unit - Brazilian States Acronyms}

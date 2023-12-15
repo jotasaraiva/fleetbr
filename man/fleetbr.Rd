@@ -5,23 +5,25 @@
 \alias{fleetbr}
 \title{Brazilian Ministry of Transport Road Fleet data}
 \format{
-##`fleetbr`
-A `tibble` data frame with 28,512 and 5 columns:
+\subsection{\code{fleetbr}}{
+
+A \code{tibble} data frame with 28,512 and 5 columns:
 \describe{
-  \item{uf}{Federative Unit - Brazilian States Acronyms}
-  \item{mes, ano}{Month and Year}
-  \item{modal}{Mode of transport of observation}
-  \item{frota}{Fleet size}
+\item{uf}{Federative Unit - Brazilian States Acronyms}
+\item{mes, ano}{Month and Year}
+\item{modal}{Mode of transport of observation}
+\item{frota}{Fleet size}
+}
 }
 }
 \source{
-<https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/estatisticas-frota-de-veiculos-senatran>
+\url{https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/estatisticas-frota-de-veiculos-senatran}
 }
 \usage{
 fleetbr
 }
 \description{
-Long format dataset based on the road fleet databases
+This is a long format dataset based on the road fleet databases
 provided by the Brazilian Ministry of Transport. All variables
 are encoded to Brazilian Portuguese.
 }
