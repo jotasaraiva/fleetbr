@@ -1,9 +1,9 @@
 library(tidyverse)
-library(rvest)
 library(here)
+library(rvest)
 library(readxl)
+library(tools)
 
-# List of possible webpages from where to scrape from
 page_list <- page_list <- c(
   "https://www.gov.br/transportes/pt-br/assuntos/transito/arquivos-senatran/estatisticas/renavam/2011/frota_2011.zip",
   "https://www.gov.br/transportes/pt-br/assuntos/transito/arquivos-senatran/estatisticas/renavam/2012/frota_2012.zip",
@@ -20,7 +20,7 @@ page_list <- page_list <- c(
 
 read_fleet <- function(file) {
 
-  ext <- tools::file_ext(file)
+  ext <- file_ext(file)
 
   if (ext == "zip") {
 
@@ -298,7 +298,7 @@ read_fleet2021 <- function() {
   readfleet <- function(path) {
     tryCatch(
       expr = {
-        ext <- tools::file_ext(path)
+        ext <- file_ext(path)
         name <- paste0("tempfile.",ext)
         download.file(path, destfile = name, mode = "wb")
         data <- read_excel(name, sheet = 2, skip = 2)
@@ -306,7 +306,7 @@ read_fleet2021 <- function() {
         return(data)
       },
       error = function(e) {
-        ext <- tools::file_ext(path)
+        ext <- file_ext(path)
         name <- paste0("tempfile.",ext)
         download.file(path, destfile = name, mode = "wb")
         data <- read_excel(name, sheet = 1, skip = 2)
@@ -373,7 +373,6 @@ fleetbr <- lapply(page_list, fleet_transform) |>
   summarise(
     .by = c("uf","mes","ano","modal"),
     frota = sum(frota)
-  ) |>
-  as.data.frame()
+  )
 
-usethis::use_data(fleetbr, overwrite = T)
+usethis::use_data(fleetbr, overwrite = TRUE)

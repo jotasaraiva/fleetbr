@@ -3,16 +3,15 @@
 \docType{data}
 \name{fleetbr}
 \alias{fleetbr}
-\title{Brazilian Ministry of Transportation Fleet data}
+\title{Brazilian Ministry of Transport Road Fleet data}
 \format{
-## `fleetbr`
-A data.frame 28512 rows and 5 columns:
+##`fleetbr`
+A `tibble` data frame with 28,512 and 5 columns:
 \describe{
-   \item{\code{uf}}{Federative Unit - Brazilian State Acronyms}
-   \item{\code{mes}}{Month of observation}
-   \item{\code{ano}}{Year of observation}
-   \item{\code{modal}}{Mode of transport}
-   \item{\code{frota}}{Fleet size}
+  \item{uf}{Federative Unit - Brazilian States Acronyms}
+  \item{mes, ano}{Month and Year}
+  \item{modal}{Mode of transport of observation}
+  \item{frota}{Fleet size}
 }
 }
 \source{
@@ -22,7 +21,8 @@ A data.frame 28512 rows and 5 columns:
 fleetbr
 }
 \description{
-Long format dataset from the road fleet data
-provided by the Brazilian Ministry of Transportation
+Long format dataset based on the road fleet databases
+provided by the Brazilian Ministry of Transport. All variables
+are encoded to Brazilian Portuguese.
 }
 \keyword{datasets}

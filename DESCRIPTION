@@ -1,14 +1,38 @@
 Package: fleetbr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Brazilian Road Fleet Dataset
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Date: 2032-12-15
+Authors@R: 
+  c(person(
+    given = c("João", "Pedro", "Melani"),
+    family = "Saraiva",
+    email = "jpsaraiva2002@gmail.com",
+    role = c("aut","cre")
+  ),
+  person(
+    given = c("Pedro", "Augusto", "Borges"), 
+    family = "Santos",
+    email = "pabsantos21@gmail.com",
+    role = "aut",
+    comment = c(ORCID = "0000-0003-0550-4251")
+  ))
+Description: A pre-processed long format dataset from the road fleet
+    data provided by the open data sources of the Brazilian Ministry of
+    Transport.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
+Import:
+    tibble
+Suggests:
+    dplyr,
+    tidyr,
+    stringr,
+    here,
+    rvest,
+    readxl,
+    tools
