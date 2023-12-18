@@ -7,7 +7,7 @@
 
 [![R-CMD-check](https://github.com/jotasaraiva/fleetbr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jotasaraiva/fleetbr/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 The goal of `fleetbr` is to provide a dataset of nationwide vehicle
