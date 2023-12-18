@@ -13,13 +13,17 @@ knitr::opts_chunk$set(
 )
 ```
 
-# fleetbr
+# fleetbr <a href="https://jotasaraiva.github.io/fleetbr/"><img src="man/figures/logo.png" align="right" height="139" alt="fleetbr website" /></a>
+
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jotasaraiva/fleetbr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jotasaraiva/fleetbr/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of fleetbr is to ...
+The goal of `fleetbr` is to provide a dataset of nationwide vehicle counts by state and mode of transportation in Brazil, provided by the Brazilian Ministry of Transport.
+
+The dataset is provided in [`tibble`](https://github.com/tidyverse/tibble) format. 
 
 ## Installation
 
@@ -32,25 +36,19 @@ devtools::install_github("jotasaraiva/fleetbr")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows how the data is displayed:
 
 ```{r example}
 library(fleetbr)
-## basic example code
+
+tail(fleetbr, 15)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+### Citation
 
-```{r cars}
-summary(cars)
+This package can be cited as follows:
+
+```{r}
+citation("fleetbr")
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
