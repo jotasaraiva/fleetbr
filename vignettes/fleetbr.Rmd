@@ -1,8 +1,8 @@
 ---
-title: "fleetbr"
+title: "Getting Started"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{fleetbr}
+  %\VignetteIndexEntry{Getting Started}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,9 +14,38 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(fleetbr)
+The `fleetbr` package contains a single dataset of the registered motor vehicles in Brazil by state and mode of transportation from 2011 to 2021, provided in `tibble` format for integration with the `tidyverse` packages. The date is acquired from the open data sources of the Brazilian Ministry of Transport.
+
+## Instalation
+
+You can install the development version of `fleetbr` from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("jotasaraiva/fleetbr")
 ```
 
-The `fleetbr` package contains a single dataset of the registered motor vehicles counts by state and mode of transportation in Brazil from 2011 to 2021. 
+## Example
+
+Afterwards, the package can be loaded along with the `dplyr`, `ggplot2` and `lubridate` packages for filtering and plotting a subset of the data:  
+
+```{r setup}
+library(fleetbr)
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+```
+
+In this example, a time series of the data from the state of São Paulo is displayed:
+
+```{r}
+fleetbr |> 
+  filter(uf == "SP") |> 
+  mutate(
+    dates = ym(paste0(ano,"-",mes))
+  ) |> 
+  ggplot(aes(dates,frota, color = modal)) + 
+    geom_line(size = 1)
+```
+
 

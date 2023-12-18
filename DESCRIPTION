@@ -16,7 +16,8 @@ Authors@R:
     email = "pabsantos21@gmail.com",
     role = "aut",
     comment = c(ORCID = "0000-0003-0550-4251")
-  ))
+  ),
+  person("ONSV - National Road Safety Observatory", role = c("cph", "fnd")))
 Description: The package is long format dataset from the road fleet
     data provided by the open data sources of the Brazilian Ministry of
     Transport.
@@ -28,14 +29,11 @@ RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 Suggests:
-    dplyr,
-    tidyr,
-    stringr,
-    here,
-    rvest,
-    readxl,
-    tools,
+    tibble,
     knitr,
-    rmarkdown
+    rmarkdown,
+    dplyr,
+    ggplot2,
+    lubridate
 VignetteBuilder: knitr
 URL: https://jotasaraiva.github.io/fleetbr/
