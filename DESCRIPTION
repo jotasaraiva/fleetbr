@@ -17,7 +17,7 @@ Authors@R:
     role = "aut",
     comment = c(ORCID = "0000-0003-0550-4251")
   ))
-Description: A pre-processed long format dataset from the road fleet
+Description: The package is long format dataset from the road fleet
     data provided by the open data sources of the Brazilian Ministry of
     Transport.
 License: MIT + file LICENSE
@@ -34,4 +34,8 @@ Suggests:
     here,
     rvest,
     readxl,
-    tools
+    tools,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://jotasaraiva.github.io/fleetbr/

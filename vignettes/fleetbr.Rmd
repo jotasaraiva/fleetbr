@@ -1,0 +1,22 @@
+---
+title: "fleetbr"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fleetbr}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(fleetbr)
+```
+
+The `fleetbr` package contains a single dataset of the registered motor vehicles counts by state and mode of transportation in Brazil from 2011 to 2021. 
+
