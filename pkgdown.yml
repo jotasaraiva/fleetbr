@@ -1,0 +1,10 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  fleetbr: fleetbr.html
+last_built: 2023-12-18T12:40Z
+urls:
+  reference: https://jotasaraiva.github.io/fleetbr/reference
+  article: https://jotasaraiva.github.io/fleetbr/articles
+
