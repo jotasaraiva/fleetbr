@@ -20,7 +20,7 @@ The dataset is provided in
 ## Installation
 
 You can install the development version of fleetbr from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/jotasaraiva/fleetbr) with:
 
 ``` r
 # install.packages("devtools")
@@ -62,8 +62,8 @@ citation("fleetbr")
 #> To cite package 'fleetbr' in publications use:
 #> 
 #>   Saraiva JPM, Santos PAB (2032). _fleetbr: Brazilian Road Fleet
-#>   Dataset_. R package version 0.1.0,
-#>   <https://jotasaraiva.github.io/fleetbr/>.
+#>   Dataset_. https://jotasaraiva.github.io/fleetbr/,
+#>   https://github.com/jotasaraiva/fleetbr.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -71,7 +71,6 @@ citation("fleetbr")
 #>     title = {fleetbr: Brazilian Road Fleet Dataset},
 #>     author = {João Pedro Melani Saraiva and Pedro Augusto Borges Santos},
 #>     year = {2032},
-#>     note = {R package version 0.1.0},
-#>     url = {https://jotasaraiva.github.io/fleetbr/},
+#>     note = {https://jotasaraiva.github.io/fleetbr/, https://github.com/jotasaraiva/fleetbr},
 #>   }
 ```
