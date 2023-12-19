@@ -29,7 +29,7 @@ devtools::install_github("jotasaraiva/fleetbr")
 
 Afterwards, the package can be loaded along with the `dplyr`, `ggplot2` and `lubridate` packages for filtering and plotting a subset of the data:  
 
-```{r setup}
+```{r setup, warning=FALSE, message=FALSE}
 library(fleetbr)
 library(dplyr)
 library(ggplot2)
@@ -38,14 +38,14 @@ library(lubridate)
 
 In this example, a time series of the data from the state of São Paulo is displayed:
 
-```{r}
+```{r, warning=FALSE}
 fleetbr |> 
   filter(uf == "SP") |> 
   mutate(
     dates = ym(paste0(ano,"-",mes))
   ) |> 
   ggplot(aes(dates,frota, color = modal)) + 
-    geom_line(size = 1)
+    geom_line(linewidth = 1)
 ```
 
 

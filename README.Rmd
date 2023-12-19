@@ -27,7 +27,7 @@ The dataset is provided in [`tibble`](https://github.com/tidyverse/tibble) forma
 
 ## Installation
 
-You can install the development version of fleetbr from [GitHub](https://github.com/) with:
+You can install the development version of fleetbr from [GitHub](https://github.com/jotasaraiva/fleetbr) with:
 
 ``` r
 # install.packages("devtools")
