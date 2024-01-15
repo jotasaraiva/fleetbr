@@ -4,7 +4,7 @@ library(rvest)
 library(readxl)
 library(tools)
 
-page_list <- page_list <- c(
+page_list <- c(
   "https://www.gov.br/transportes/pt-br/assuntos/transito/arquivos-senatran/estatisticas/renavam/2011/frota_2011.zip",
   "https://www.gov.br/transportes/pt-br/assuntos/transito/arquivos-senatran/estatisticas/renavam/2012/frota_2012.zip",
   "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2013",
@@ -126,9 +126,7 @@ read_fleet_page <- function(page) {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,
@@ -159,9 +157,7 @@ read_fleet2011 <- function() {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,
@@ -192,9 +188,7 @@ read_fleet2012 <- function() {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,
@@ -224,9 +218,7 @@ read_fleet2015 <- function() {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,
@@ -278,9 +270,7 @@ read_fleet2016 <- function() {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,
@@ -326,9 +316,7 @@ read_fleet2021 <- function() {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,

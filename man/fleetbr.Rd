@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{fleetbr}}{
 
-A \code{tibble} data frame with 28,512 and 5 columns:
+A \code{tibble} data frame with 78,408 and 5 columns:
 \describe{
 \item{uf}{Federative Unit - Brazilian States Acronyms}
 \item{mes, ano}{Month and Year}
