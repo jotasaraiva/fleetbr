@@ -1,7 +1,7 @@
 Package: fleetbr
 Type: Package
-Title: Brazilian Road Fleet Dataset
-Version: 0.1.1
+Title: Brazilian Vehicle Fleet Dataset
+Version: 0.1.2
 Date: 2032-12-15
 Authors@R: 
   c(person(
@@ -18,9 +18,8 @@ Authors@R:
     comment = c(ORCID = "0000-0003-0550-4251")
   ),
   person("ONSV - National Road Safety Observatory", role = c("cph", "fnd")))
-Description: The package is long format dataset from the road fleet
-    data provided by the open data sources of the Brazilian Ministry of
-    Transport.
+Description: The package includes a dataset from the road vehicle data provided 
+    by the Brazilian Ministry of Transport.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

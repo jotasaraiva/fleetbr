@@ -1,3 +1,11 @@
+# fleetbr 0.1.2
+
+* Fixes DESCRIPTION (#7)
+
+* Fix `data-raw/` (#6)
+
+* Adds all types of vehicles (#4)
+
 # fleetbr 0.1.1
 
 * Fixes README (#2)
