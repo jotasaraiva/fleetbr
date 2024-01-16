@@ -97,23 +97,23 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://jotasaraiva.github.io/fleetbr/">fleetbr</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">tail</a></span><span class="op">(</span><span class="va">fleetbr</span>, <span class="fl">15</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       uf mes  ano       modal    frota</span></span>
-<span><span class="co">#&gt; 28498 SP  12 2021   AUTOMOVEL 19305526</span></span>
-<span><span class="co">#&gt; 28499 SP  12 2021 CAMINHONETE  2177477</span></span>
-<span><span class="co">#&gt; 28500 SP  12 2021   CAMIONETA  1368114</span></span>
-<span><span class="co">#&gt; 28501 SP  12 2021  UTILITARIO   404646</span></span>
-<span><span class="co">#&gt; 28502 SP  12 2021 MOTOCICLETA  5119480</span></span>
-<span><span class="co">#&gt; 28503 SP  12 2021  CICLOMOTOR    59006</span></span>
-<span><span class="co">#&gt; 28504 SP  12 2021    MOTONETA  1076795</span></span>
-<span><span class="co">#&gt; 28505 TO  12 2021       TOTAL   791463</span></span>
-<span><span class="co">#&gt; 28506 TO  12 2021   AUTOMOVEL   247325</span></span>
-<span><span class="co">#&gt; 28507 TO  12 2021 CAMINHONETE    78912</span></span>
-<span><span class="co">#&gt; 28508 TO  12 2021   CAMIONETA    13475</span></span>
-<span><span class="co">#&gt; 28509 TO  12 2021  UTILITARIO     6227</span></span>
-<span><span class="co">#&gt; 28510 TO  12 2021 MOTOCICLETA   254724</span></span>
-<span><span class="co">#&gt; 28511 TO  12 2021  CICLOMOTOR     1931</span></span>
-<span><span class="co">#&gt; 28512 TO  12 2021    MOTONETA   106335</span></span></code></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">fleetbr</span>, <span class="fl">15</span><span class="op">)</span></span>
+<span><span class="co">#&gt;    uf mes  ano           modal  frota</span></span>
+<span><span class="co">#&gt; 1  AC   1 2011           TOTAL 163862</span></span>
+<span><span class="co">#&gt; 2  AC   1 2011       AUTOMOVEL  54266</span></span>
+<span><span class="co">#&gt; 3  AC   1 2011           BONDE      0</span></span>
+<span><span class="co">#&gt; 4  AC   1 2011        CAMINHAO   5510</span></span>
+<span><span class="co">#&gt; 5  AC   1 2011 CAMINHAO TRATOR    476</span></span>
+<span><span class="co">#&gt; 6  AC   1 2011     CAMINHONETE  15575</span></span>
+<span><span class="co">#&gt; 7  AC   1 2011       CAMIONETA   2761</span></span>
+<span><span class="co">#&gt; 8  AC   1 2011   CHASSI PLATAF     12</span></span>
+<span><span class="co">#&gt; 9  AC   1 2011      CICLOMOTOR     12</span></span>
+<span><span class="co">#&gt; 10 AC   1 2011    MICRO-ONIBUS    212</span></span>
+<span><span class="co">#&gt; 11 AC   1 2011     MOTOCICLETA  68332</span></span>
+<span><span class="co">#&gt; 12 AC   1 2011        MOTONETA  13359</span></span>
+<span><span class="co">#&gt; 13 AC   1 2011          ONIBUS    646</span></span>
+<span><span class="co">#&gt; 14 AC   1 2011     QUADRICICLO      0</span></span>
+<span><span class="co">#&gt; 15 AC   1 2011         REBOQUE   1239</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h3>
@@ -122,14 +122,14 @@
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"fleetbr"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite package 'fleetbr' in publications use:</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   Saraiva JPM, Santos PAB (2032). _fleetbr: Brazilian Road Fleet</span></span>
+<span><span class="co">#&gt;   Saraiva JPM, Santos PAB (2032). _fleetbr: Brazilian Vehicle Fleet</span></span>
 <span><span class="co">#&gt;   Dataset_. https://jotasaraiva.github.io/fleetbr/,</span></span>
 <span><span class="co">#&gt;   https://github.com/jotasaraiva/fleetbr.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;   @Manual{,</span></span>
-<span><span class="co">#&gt;     title = {fleetbr: Brazilian Road Fleet Dataset},</span></span>
+<span><span class="co">#&gt;     title = {fleetbr: Brazilian Vehicle Fleet Dataset},</span></span>
 <span><span class="co">#&gt;     author = {João Pedro Melani Saraiva and Pedro Augusto Borges Santos},</span></span>
 <span><span class="co">#&gt;     year = {2032},</span></span>
 <span><span class="co">#&gt;     note = {https://jotasaraiva.github.io/fleetbr/, https://github.com/jotasaraiva/fleetbr},</span></span>
