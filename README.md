@@ -34,23 +34,23 @@ This is a basic example which shows how the data is displayed:
 ``` r
 library(fleetbr)
 
-tail(fleetbr, 15)
-#>       uf mes  ano       modal    frota
-#> 28498 SP  12 2021   AUTOMOVEL 19305526
-#> 28499 SP  12 2021 CAMINHONETE  2177477
-#> 28500 SP  12 2021   CAMIONETA  1368114
-#> 28501 SP  12 2021  UTILITARIO   404646
-#> 28502 SP  12 2021 MOTOCICLETA  5119480
-#> 28503 SP  12 2021  CICLOMOTOR    59006
-#> 28504 SP  12 2021    MOTONETA  1076795
-#> 28505 TO  12 2021       TOTAL   791463
-#> 28506 TO  12 2021   AUTOMOVEL   247325
-#> 28507 TO  12 2021 CAMINHONETE    78912
-#> 28508 TO  12 2021   CAMIONETA    13475
-#> 28509 TO  12 2021  UTILITARIO     6227
-#> 28510 TO  12 2021 MOTOCICLETA   254724
-#> 28511 TO  12 2021  CICLOMOTOR     1931
-#> 28512 TO  12 2021    MOTONETA   106335
+head(fleetbr, 15)
+#>    uf mes  ano           modal  frota
+#> 1  AC   1 2011           TOTAL 163862
+#> 2  AC   1 2011       AUTOMOVEL  54266
+#> 3  AC   1 2011           BONDE      0
+#> 4  AC   1 2011        CAMINHAO   5510
+#> 5  AC   1 2011 CAMINHAO TRATOR    476
+#> 6  AC   1 2011     CAMINHONETE  15575
+#> 7  AC   1 2011       CAMIONETA   2761
+#> 8  AC   1 2011   CHASSI PLATAF     12
+#> 9  AC   1 2011      CICLOMOTOR     12
+#> 10 AC   1 2011    MICRO-ONIBUS    212
+#> 11 AC   1 2011     MOTOCICLETA  68332
+#> 12 AC   1 2011        MOTONETA  13359
+#> 13 AC   1 2011          ONIBUS    646
+#> 14 AC   1 2011     QUADRICICLO      0
+#> 15 AC   1 2011         REBOQUE   1239
 ```
 
 ### Citation
@@ -61,14 +61,14 @@ This package can be cited as follows:
 citation("fleetbr")
 #> To cite package 'fleetbr' in publications use:
 #> 
-#>   Saraiva JPM, Santos PAB (2032). _fleetbr: Brazilian Road Fleet
+#>   Saraiva JPM, Santos PAB (2032). _fleetbr: Brazilian Vehicle Fleet
 #>   Dataset_. https://jotasaraiva.github.io/fleetbr/,
 #>   https://github.com/jotasaraiva/fleetbr.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {fleetbr: Brazilian Road Fleet Dataset},
+#>     title = {fleetbr: Brazilian Vehicle Fleet Dataset},
 #>     author = {João Pedro Melani Saraiva and Pedro Augusto Borges Santos},
 #>     year = {2032},
 #>     note = {https://jotasaraiva.github.io/fleetbr/, https://github.com/jotasaraiva/fleetbr},

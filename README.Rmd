@@ -41,7 +41,7 @@ This is a basic example which shows how the data is displayed:
 ```{r example}
 library(fleetbr)
 
-tail(fleetbr, 15)
+head(fleetbr, 15)
 ```
 
 ### Citation

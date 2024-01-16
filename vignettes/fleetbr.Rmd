@@ -40,12 +40,12 @@ In this example, a time series of the data from the state of São Paulo is displ
 
 ```{r, warning=FALSE}
 fleetbr |> 
-  filter(uf == "SP") |> 
+  filter(uf == "SP",
+         modal %in% c("TOTAL", "AUTOMOVEL", "MOTOCICLETA")) |> 
   mutate(
-    dates = ym(paste0(ano,"-",mes))
+    date = ym(paste0(ano,"-",mes))
   ) |> 
-  ggplot(aes(dates,frota, color = modal)) + 
-    geom_line(linewidth = 1)
+  ggplot(aes(date,frota, color = modal)) + geom_line()
 ```
 
 

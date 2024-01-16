@@ -3,7 +3,7 @@
 \docType{data}
 \name{fleetbr}
 \alias{fleetbr}
-\title{Brazilian Ministry of Transport Road Fleet data}
+\title{Brazilian Vehicle Fleet Dataset}
 \format{
 \subsection{\code{fleetbr}}{
 
@@ -23,8 +23,7 @@ A \code{tibble} data frame with 78,408 and 5 columns:
 fleetbr
 }
 \description{
-This is a long format dataset based on the road fleet databases
-provided by the Brazilian Ministry of Transport. All variables
-are encoded to Brazilian Portuguese.
+The package includes a dataset from the road vehicle data provided
+by the Brazilian Ministry of Transport.
 }
 \keyword{datasets}

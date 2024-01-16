@@ -1,8 +1,7 @@
-#' Brazilian Ministry of Transport Road Fleet data
+#' Brazilian Vehicle Fleet Dataset
 #'
-#' This is a long format dataset based on the road fleet databases
-#' provided by the Brazilian Ministry of Transport. All variables
-#' are encoded to Brazilian Portuguese.
+#' The package includes a dataset from the road vehicle data provided
+#' by the Brazilian Ministry of Transport.
 #'
 #' @format ## `fleetbr`
 #' A `tibble` data frame with 78,408 and 5 columns:
