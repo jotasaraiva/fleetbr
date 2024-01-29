@@ -61,7 +61,7 @@ This package can be cited as follows:
 citation("fleetbr")
 #> To cite package 'fleetbr' in publications use:
 #> 
-#>   Saraiva JPM, Santos PAB (2032). _fleetbr: Brazilian Vehicle Fleet
+#>   Saraiva JPM, Santos PAB (2024). _fleetbr: Brazilian Vehicle Fleet
 #>   Dataset_. https://jotasaraiva.github.io/fleetbr/,
 #>   https://github.com/jotasaraiva/fleetbr.
 #> 
@@ -70,7 +70,7 @@ citation("fleetbr")
 #>   @Manual{,
 #>     title = {fleetbr: Brazilian Vehicle Fleet Dataset},
 #>     author = {João Pedro Melani Saraiva and Pedro Augusto Borges Santos},
-#>     year = {2032},
+#>     year = {2024},
 #>     note = {https://jotasaraiva.github.io/fleetbr/, https://github.com/jotasaraiva/fleetbr},
 #>   }
 ```
