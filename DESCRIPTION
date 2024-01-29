@@ -2,7 +2,7 @@ Package: fleetbr
 Type: Package
 Title: Brazilian Vehicle Fleet Dataset
 Version: 0.2.0
-Date: 2032-12-15
+Date: 2024-01-29
 Authors@R: 
   c(person(
     given = c("João", "Pedro", "Melani"),

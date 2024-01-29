@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The `fleetbr` package contains a single dataset of the registered motor vehicles in Brazil by state and mode of transportation from 2011 to 2021, provided in `tibble` format for integration with the `tidyverse` packages. The date is acquired from the open data sources of the Brazilian Ministry of Transport.
+The `fleetbr` package contains a single dataset of the registered motor vehicles in Brazil by state and mode of transportation from 2011 to 2023, provided in `tibble` format for integration with the `tidyverse` packages. The date is acquired from the open data sources of the Brazilian Ministry of Transport.
 
 ## Instalation
 
