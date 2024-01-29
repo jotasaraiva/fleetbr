@@ -15,7 +15,8 @@ page_list <- c(
   "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2018",
   "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2019",
   "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2020",
-  "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2021"
+  "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2021",
+  "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2023"
 )
 
 read_fleet <- function(file) {
@@ -328,6 +329,54 @@ read_fleet2021 <- function() {
   return(frota)
 }
 
+read_fleet2022 <- function() {
+  links <- rev(fleet_links("https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-Senatran/frota-de-veiculos-2022"))
+
+  readfleet <- function(path) {
+    tryCatch(
+      expr = {
+        ext <- tools::file_ext(path)
+        name <- paste0("tempfile.",ext)
+        download.file(path, destfile = name, mode = "wb")
+        data <- readxl::read_excel(name, sheet = 2, skip = 2)
+        unlink(name)
+        return(data)
+      },
+      error = function(e) {
+        ext <- tools::file_ext(path)
+        name <- paste0("tempfile.",ext)
+        download.file(path, destfile = name, mode = "wb")
+        data <- readxl::read_excel(name, sheet = 1, skip = 2)
+        unlink(name)
+        return(data)
+      }
+    )
+  }
+
+  frota <- lapply(links, readfleet)
+
+  for (i in 1:length(frota)) {
+    x <- frota[[i]]
+    x <- x[x$UF != "UF", ]
+    x$ANO <- 2022
+    x$MES <- i
+    frota[[i]] <- x
+  }
+
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
+                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
+                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(
+    frota,
+    mutate,
+    across(!UF, as.numeric)
+  )
+
+  frota <- reduce(frota, full_join)
+
+  return(frota)
+}
+
 fleet_transform <- function(path) {
   ano <- str_extract(path, "(1|2)\\d{3}")
 
@@ -345,6 +394,9 @@ fleet_transform <- function(path) {
   }
   else if (ano == "2021") {
     frota <- read_fleet2021()
+  }
+  else if (ano == "2022") {
+    frota <- read_fleet2022()
   } else {
     frota <- read_fleet_page(path)
   }
