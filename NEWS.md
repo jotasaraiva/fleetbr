@@ -1,3 +1,7 @@
+# fleetbr 0.2.1
+
+* Fix missing 2022 data (#13)
+
 # fleetbr 0.2.0
 
 * Adds 2022 and 2023 data (#10)
