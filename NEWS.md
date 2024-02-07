@@ -1,5 +1,7 @@
 # fleetbr 0.2.2
 
+* Fix monthly order (#15)
+
 # fleetbr 0.2.1
 
 * Fix missing 2022 data (#13)

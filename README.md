@@ -36,21 +36,21 @@ library(fleetbr)
 
 head(fleetbr, 15)
 #>    uf mes  ano           modal  frota
-#> 1  AC   1 2011           TOTAL 163862
-#> 2  AC   1 2011       AUTOMOVEL  54266
+#> 1  AC   1 2011           TOTAL 152592
+#> 2  AC   1 2011       AUTOMOVEL  51188
 #> 3  AC   1 2011           BONDE      0
-#> 4  AC   1 2011        CAMINHAO   5510
-#> 5  AC   1 2011 CAMINHAO TRATOR    476
-#> 6  AC   1 2011     CAMINHONETE  15575
-#> 7  AC   1 2011       CAMIONETA   2761
+#> 4  AC   1 2011        CAMINHAO   5180
+#> 5  AC   1 2011 CAMINHAO TRATOR    436
+#> 6  AC   1 2011     CAMINHONETE  14719
+#> 7  AC   1 2011       CAMIONETA   2630
 #> 8  AC   1 2011   CHASSI PLATAF     12
-#> 9  AC   1 2011      CICLOMOTOR     12
-#> 10 AC   1 2011    MICRO-ONIBUS    212
-#> 11 AC   1 2011     MOTOCICLETA  68332
-#> 12 AC   1 2011        MOTONETA  13359
-#> 13 AC   1 2011          ONIBUS    646
+#> 9  AC   1 2011      CICLOMOTOR     10
+#> 10 AC   1 2011    MICRO-ONIBUS    174
+#> 11 AC   1 2011     MOTOCICLETA  62683
+#> 12 AC   1 2011        MOTONETA  12448
+#> 13 AC   1 2011          ONIBUS    584
 #> 14 AC   1 2011     QUADRICICLO      0
-#> 15 AC   1 2011         REBOQUE   1239
+#> 15 AC   1 2011         REBOQUE   1180
 ```
 
 ### Citation
@@ -62,8 +62,9 @@ citation("fleetbr")
 #> To cite package 'fleetbr' in publications use:
 #> 
 #>   Saraiva JPM, Santos PAB (2024). _fleetbr: Brazilian Vehicle Fleet
-#>   Dataset_. https://jotasaraiva.github.io/fleetbr/,
-#>   https://github.com/jotasaraiva/fleetbr.
+#>   Dataset_. R package version 0.2.2,
+#>   https://github.com/jotasaraiva/fleetbr,
+#>   <https://jotasaraiva.github.io/fleetbr/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -71,6 +72,7 @@ citation("fleetbr")
 #>     title = {fleetbr: Brazilian Vehicle Fleet Dataset},
 #>     author = {João Pedro Melani Saraiva and Pedro Augusto Borges Santos},
 #>     year = {2024},
-#>     note = {https://jotasaraiva.github.io/fleetbr/, https://github.com/jotasaraiva/fleetbr},
+#>     note = {R package version 0.2.2, https://github.com/jotasaraiva/fleetbr},
+#>     url = {https://jotasaraiva.github.io/fleetbr/},
 #>   }
 ```
