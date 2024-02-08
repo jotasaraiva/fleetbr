@@ -143,11 +143,8 @@ read_fleet_page <- function(page) {
 read_fleet2011 <- function() {
 
   folder <- here("data-raw","frota_mensal","frota_2011","Frota Munic. 2011")
-  files <- list.files(folder)
+  files <- str_sort(list.files(folder), numeric = T)
   paths <- paste(sep = "/", folder, files)
-  files_info <- file.info(paths)
-  files_info <- files_info[with(files_info, order(as.POSIXct(mtime))), ]
-  paths <- rownames(files_info)
 
   frota <- lapply(paths, read_excel, sheet = 2, skip = 2)
 
@@ -174,11 +171,8 @@ read_fleet2011 <- function() {
 read_fleet2012 <- function() {
 
   folder <- here("data-raw","frota_mensal","frota_2012","Frota Munic. 2012")
-  files <- list.files(folder)
+  files <- str_sort(list.files(folder), numeric = T)
   paths <- paste(sep = "/", folder, files)
-  files_info <- file.info(paths)
-  files_info <- files_info[with(files_info, order(as.POSIXct(mtime))), ]
-  paths <- rownames(files_info)
 
   frota <- lapply(paths, read_excel, sheet = 2, skip = 2)
 
@@ -204,11 +198,8 @@ read_fleet2012 <- function() {
 
 read_fleet2015 <- function() {
   folder <- here("data-raw","frota_mensal","frota_2015")
-  files <- list.files(folder)
+  files <- str_sort(list.files(folder), numeric = T)
   paths <- paste(sep = "/", folder, files)
-  files_info <- file.info(paths)
-  files_info <- files_info[with(files_info, order(as.POSIXct(mtime))), ]
-  paths <- rownames(files_info)
 
   frota <- lapply(paths, read_excel, sheet = 2, skip = 2)
 
@@ -234,20 +225,8 @@ read_fleet2015 <- function() {
 
 read_fleet2016 <- function() {
   folder <- here("data-raw","frota_mensal","frota_2016")
-  files <- list.files(folder)
+  files <- str_sort(list.files(folder), numeric = T)
   paths <- paste(sep = "/", folder, files)
-  files_info <- file.info(paths)
-  files_info <- files_info[with(files_info, order(as.POSIXct(mtime))), ]
-  paths <- rownames(files_info)
-
-  swap <- function(vec, from, to) {
-    tmp <- to[ match(vec, from) ]
-    tmp[is.na(tmp)] <- vec[is.na(tmp)]
-    return(tmp)
-  }
-
-  paths <- swap(paths, c(paths[5],paths[6]), c(paths[6],paths[5]))
-
 
   readfunc <- function(path) {
     tryCatch(
