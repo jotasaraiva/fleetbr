@@ -62,9 +62,8 @@ citation("fleetbr")
 #> To cite package 'fleetbr' in publications use:
 #> 
 #>   Saraiva JPM, Santos PAB (2024). _fleetbr: Brazilian Vehicle Fleet
-#>   Dataset_. R package version 0.2.2,
-#>   https://github.com/jotasaraiva/fleetbr,
-#>   <https://jotasaraiva.github.io/fleetbr/>.
+#>   Dataset_. https://jotasaraiva.github.io/fleetbr/,
+#>   https://github.com/jotasaraiva/fleetbr.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -72,7 +71,6 @@ citation("fleetbr")
 #>     title = {fleetbr: Brazilian Vehicle Fleet Dataset},
 #>     author = {João Pedro Melani Saraiva and Pedro Augusto Borges Santos},
 #>     year = {2024},
-#>     note = {R package version 0.2.2, https://github.com/jotasaraiva/fleetbr},
-#>     url = {https://jotasaraiva.github.io/fleetbr/},
+#>     note = {https://jotasaraiva.github.io/fleetbr/, https://github.com/jotasaraiva/fleetbr},
 #>   }
 ```

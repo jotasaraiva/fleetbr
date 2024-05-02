@@ -343,9 +343,7 @@ read_fleet2022 <- function() {
     frota[[i]] <- x
   }
 
-  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL,CAMINHONETE,
-                                   CAMIONETA,UTILITARIO,MOTOCICLETA,
-                                   CICLOMOTOR,MOTONETA,MES,ANO))
+  frota <- lapply(frota, select, c(UF,TOTAL,AUTOMOVEL, BONDE, CAMINHAO, `CAMINHAO TRATOR`, CAMINHONETE, CAMIONETA, `CHASSI PLATAF`, CICLOMOTOR, `MICRO-ONIBUS`, MOTOCICLETA, MOTONETA, ONIBUS, QUADRICICLO, REBOQUE, `SEMI-REBOQUE`, `SIDE-CAR`, OUTROS, `TRATOR ESTEI`, `TRATOR RODAS`, TRICICLO, UTILITARIO, MES, ANO))
   frota <- lapply(
     frota,
     mutate,
