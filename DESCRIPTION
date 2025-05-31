@@ -1,8 +1,8 @@
 Package: fleetbr
 Type: Package
 Title: Brazilian Vehicle Fleet Dataset
-Version: 0.2.3
-Date: 2024-01-29
+Version: 0.2.4
+Date: 2025-05-30
 Authors@R: 
   c(person(
     given = c("João", "Pedro", "Melani"),
@@ -19,12 +19,12 @@ Authors@R:
   ),
   person("ONSV - National Road Safety Observatory", role = c("cph", "fnd")))
 Description: The package includes a dataset from the road vehicle data provided 
-    by the Brazilian Ministry of Transport.
+    by the Brazilian Ministry of Transport, updated through the year 2024.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
 BugReports: https://github.com/jotasaraiva/fleetbr/issues

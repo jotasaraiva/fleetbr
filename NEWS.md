@@ -1,3 +1,7 @@
+# fleetbr 0.2.4
+
+* Adds 2024 data (#20)
+
 # fleetbr 0.2.3
 
 * Fix 2022 data (#17)
