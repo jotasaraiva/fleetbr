@@ -1,33 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/404.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/articles/fleetbr.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/reference/fleetbr.html</loc>
-  </url>
-  <url>
-    <loc>https://jotasaraiva.github.io/fleetbr/reference/index.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://jotasaraiva.github.io/fleetbr/404.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/LICENSE-text.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/LICENSE.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/articles/fleetbr.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/articles/index.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/authors.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/index.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/news/index.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/reference/fleetbr.html</loc></url>
+<url><loc>https://jotasaraiva.github.io/fleetbr/reference/index.html</loc></url>
 </urlset>
+
